@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="styles.css">
+    <script
+      src="https://kit.fontawesome.com/96fccda491.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo"><h1>Bernard</h1></div>
+            <div class="nav-items">
+                <li><a href="praroz.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Html Class</a>
+                        <a href="#">CSS Class</a>
+                        <a href="#">JavaScript Class</a>
+                    </div>
+                </li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+              </div>
+
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span>
+            </div>
+            <form action="#" id="NavForm">
+                <input
+                  type="search"
+                  class="search-data"
+                  placeholder="Search"
+                  required
+                />
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+        
+    </header>
+    <div class="container">
+      <div class="header">
+        <h2>Sign up Form</h2>
+      </div>
+
+      <form class="Signform" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="John Doe" />
+          <small>ErrorMessage</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="xxxx" />
+          <small>ErrorMessage</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="xxxx" />
+          <small>ErrorMessage</small>
+        </div>
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="signUp.js"></script>
+  </body>
+</html>
